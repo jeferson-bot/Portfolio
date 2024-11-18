@@ -1,0 +1,56 @@
+/* Impostazioni generali per la sezione progetti */
+.projects {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Layout su schermi più grandi */
+@media (min-width: 600px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 colonne uguali */
+    }
+}
+
+/* Layout su schermi piccoli (mobile) */
+@media (max-width: 599px) {
+    .projects {
+        grid-template-columns: 1fr;
+        /* 1 colonna per adattarsi a schermi più stretti */
+    }
+}
+
+/* Stili per ogni progetto */
+.project {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.scuro {
+    background-color: black;
+    color: white;
+}
+
+body.scuro .project {
+    background-color: darkgray;
+    color: white;
+}
+
+/*imagine di background*/
+
+body {
+    background-image: url('img/background.jpg');
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

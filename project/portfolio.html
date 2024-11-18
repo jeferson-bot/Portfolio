@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <p>
+      JEFERSON TONETTO, Data scientist appassionato dell'intelligenza
+      artificiale, orientato a contribuire per ragiungere la piu grande
+      evolucione tecnologica di questa era...
+    </p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Benvenuto nel mio Portfolio</h1>
+      <button id="cambiaTema">Cambia Tema</button>
+    </header>
+
+    <section class="projects">
+      <div class="project">
+        <h3>Modello di apprendimento automatico</h3>
+        <p>
+          Creazione di un sistema di raccomandazione di videogiochi per gli
+          utenti. Creazione di funzioni per gli endpoint utilizzati in un'API.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Business Intelligence</h3>
+        <p>
+          analisi dei dati e raccomandazioni di investimento, Aiuta l'azienda a
+          fornire un servizio clienti eccezionale, identificare nuove aree da
+          espandere e personalizzare le sue offerte per soddisfare le esigenze
+          specifiche dei suoi potenziali clienti.
+        </p>
+      </div>
+    </section>
+
+    <!--inizio Sezione "Contattami" Interattiva-->
+
+    <section id="contact">
+      <h2>Contattami</h2>
+      <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Messaggio:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Invia</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
+    <!--Fine Sezione "Contattami" Interattiva-->
+
+    <script src="dist/app.js"></script>
+    <script src="dist/ContactForm.js"></script>
+  </body>
+</html>
